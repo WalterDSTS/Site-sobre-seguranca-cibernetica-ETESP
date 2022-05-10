@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, Verdana;
+    margin: 0px;
+}
+
+.navigation{
+    font-size: 15px;
+    height: 45px;
+    background-color: rgb(189, 240, 247);
+    display: flex;
+    justify-content: center;
+}
+
+.containersNav{
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    margin-right: 1%;
+}
+
+.logoImg{
+    width: 100%;
+}
+
+.paragraph{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+}
+
+.searchBar{
+    background-color: white;
+    margin: 0px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 7px 20px;
+}
+
+.navItems{
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
