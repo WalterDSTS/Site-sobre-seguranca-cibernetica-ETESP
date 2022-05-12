@@ -1,14 +1,16 @@
 body{
     font-family: Arial, Helvetica, Verdana;
-    margin: 0px;
+    margin: auto;
 }
+
+/*Início do tratamento da barra de navegação.*/
 
 .navigation{
     font-size: 15px;
     height: 45px;
-    background-color: rgb(189, 240, 247);
     display: flex;
     justify-content: center;
+    background-color: rgb(189, 240, 247);
 }
 
 .containersNav{
@@ -29,11 +31,11 @@ body{
 }
 
 .searchBar{
-    background-color: white;
     margin: 0px;
     border: 1px solid;
     border-radius: 15px;
     padding: 7px 20px;
+    background-color: white;
 }
 
 .navItems{
@@ -43,3 +45,178 @@ body{
     top: 50%;
     transform: translate(0, -50%);
 }
+
+/*Fim do tratamento da barra de navegação.*/
+
+/*Início do tratamento do banner principal*/
+
+.bannerMain{
+    width: 1100px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+}
+
+.bannerMainContent{
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 500px;
+    width: 359px;
+    display: inline-block;
+    color: white;
+}
+
+.ransom{
+    width: 50%;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-image: url('Imagens/ransomware.jpg');
+}
+
+.api{
+    width: 25%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('Imagens/api-web.jpeg');
+}
+
+.logisticSecurity{
+    width: 25%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('Imagens/seguranca-logistica.jpg');
+}
+
+div.bannerMainContent h2 {
+    font-size: 16px;
+    text-align: center;
+    width: 120px;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 1%;
+    top: 80%;
+    transform: translate(0, -20%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 1s;
+}
+
+.bannerMainContent a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.bannerMainContent a:visited{
+    color: white;
+}
+
+.bannerMainContent a:hover{
+    color: rgb(19, 29, 163);
+}
+
+.bannerMainContent a:active{
+    color: aqua;
+}
+
+div.bannerMainContent p{
+    font-size: 14px;
+    position: relative;
+    padding: 5px;
+    border-radius: 4px;
+    margin-left: 1%;
+    top: 80%;
+    transform: translate(0, -20%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/*Fim do tratamento do banner principal*/
+
+/*Início do tratamento do banner de apresentação.*/
+/*
+.bannerAboutUs{
+    width: 1100px;
+    height: 500px;
+    margin: auto;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    background-image: url('Imagens/seguranca-digital.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.9);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bannerContentAboutUs{
+    margin-left: 5%;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.bannerContentAboutUs::before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    border: 1px solid white;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.bannerContentAboutUs h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.bannerContentAboutUs p{
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.bannerAboutUsButton{
+    border: 1px solid;
+    padding: 5px;
+    margin: auto;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #f7cdf5;
+}
+
+.bannerAboutUs:hover{
+    filter: unset;
+}
+
+.bannerAboutUs:hover > .bannerContentAboutUs:before{
+    height: 460px;
+    width: 500px;
+    opacity: 1;
+}
+
+.bannerAboutUs:hover > .bannerContentAboutUs p{
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+*/
+/*Fim do tratamento do banner de apresentação.*/
