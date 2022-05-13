@@ -115,7 +115,7 @@ div.bannerMainContent h2 {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    transition: all 1s;
+    transition: all 0.7s;
 }
 
 .bannerMainContent a:link{
@@ -150,11 +150,12 @@ div.bannerMainContent p{
 
 /*Fim do tratamento do banner principal*/
 
-/*Início do tratamento do wrapper*/
+/*Início do tratamento do embrulho*/
 
 .wrapper{
     max-width: 1100px;
     margin: auto;
+    margin-bottom: 15px;
 }
 
 .contentWrapper{
@@ -249,8 +250,142 @@ div.readMore a:link{
     padding-left: 15px;
 } 
 
-/*Fim do tratamento do wrapper*/
+/*Fim do tratamento do embrulho*/
 
+/*Início do tratamento do trocador de páginas*/
+
+.switchPages{
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.switchButtons{
+    width: 176px;
+    position: relative;
+    display: flex;
+    border: solid 1px;
+    border-radius: 4px;
+    background-color: rgb(116, 116, 233);
+}
+
+.switchButtonFirst{
+    width: 35px;
+    border-right: solid 1px;
+    background-color: rgb(0, 0, 255);
+}
+
+.switchButtonContent{
+    width: 35px;
+    border-right: solid 1px;
+}
+
+.switchButtonLast{
+    width: 35px;
+}
+
+.switchButtons p{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    transition: all 0.7s;
+}
+
+.switchButtons a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.switchButtons a:visited{
+    color: white;
+}
+
+.switchButtons a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.switchButtons a:active{
+    color: aqua;
+}
+
+/*Fim do tratamento do trocador de páginas*/
+
+/*Início do tratamento do rodapé principal*/
+
+.backGroundFooter{
+    background-color: rgb(52, 52, 52);
+}
+
+.mainFooter{
+    width: 1100px;
+    height: 200px;
+    margin: auto;
+    background-color: rgb(52, 52, 52);
+}
+
+.mainFooterContent{
+    width: 1100px;
+    margin: 0;
+    display: flex;
+    position: relative;
+}
+
+.mainFooterContent1, .mainFooterContent2, .mainFooterContent3{
+    width: 33.3%;
+    margin: 0;
+    position: relative;
+}
+
+.footerLogo{
+    position: relative;
+    top: 100%;
+}
+
+.footerLogo img{
+    width: 100%;
+    position: relative;
+}
+
+.footerAddress{
+    position: relative;
+    top: 115%;
+    right: 20%;
+}
+
+.footerAddress pre{
+    width: 200px;
+    position: relative;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: white;
+}
+
+.footerAutor{
+    top: 115%;
+    position: relative;
+    padding-left: 50px;
+    color: white;
+}
+
+.footerAutor a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.footerAutor a:visited{
+    color: white;
+}
+
+.footerAutor a:hover{
+    color: rgb(0, 153, 255);
+}
+
+.footerAutor a:active{
+    color: aqua;
+}
+
+/*Fim do tratamento do rodapé principal*/
 
 
 /*Revisar o código abaixo*/
