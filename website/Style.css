@@ -84,7 +84,7 @@ body{
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
-    background-image: url('Imagens/ransomware.jpg');
+    background-image: url('Imagens/Imagens-Banner-Principal/ransomware.jpg');
 }
 
 .api{
@@ -92,7 +92,7 @@ body{
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('Imagens/api-web.jpeg');
+    background-image: url('Imagens/Imagens-Banner-Principal/api-web.jpeg');
 }
 
 .logisticSecurity{
@@ -100,7 +100,7 @@ body{
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('Imagens/seguranca-logistica.jpg');
+    background-image: url('Imagens/Imagens-Banner-Principal/seguranca-logistica.jpg');
 }
 
 div.bannerMainContent h2 {
@@ -162,6 +162,8 @@ div.bannerMainContent p{
     position: relative;
     display: flex;
 }
+
+/*Início do tratamento dos posts*/
 
 .posts{
     margin: 15px 15px 0px 0;
@@ -242,13 +244,202 @@ div.readMore a:link{
     text-decoration: none;
 }
 
-.contentFixed{
+/*Fim do tratamento dos posts*/
+
+/*Início do tratamento do newsletter*/
+
+.contentAside{
     width: 300px;
-    height: 300px; /*remover após concluido*/
     margin-top: 15px;
-    border: solid 2px;
-    padding-left: 15px;
-} 
+    display: flex;
+    display: block;
+}
+
+.contentAsideBox1{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contentFixed{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: rgb(116, 116, 233);
+}
+
+.newsLetter{
+    height: 150px;
+    border-radius: 10px;
+}
+
+.newsLetterBox1{
+    width: 70%;
+    left: 15%;
+    border-radius: 4px;
+    transform: translate(0, 50%);
+    position: relative;
+    background-color: rgb(189, 240, 247);
+}
+
+.newsLetterBox2{
+    width: 85%;
+    left: 8%;
+    transform: translate(0, 65%);
+    position: relative;
+    color: white;
+}
+
+.newsLetter p, .newsLetter h3{
+    margin: 0;
+    text-align: center;
+}
+
+/* ------------------------------------------- */
+
+.newsLetterSignature{
+    height: 72px;
+    margin: 2px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.boxTip{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxName, .boxEmail{
+    width: 191px;
+    height: 30px;
+    border-bottom: 1px solid;
+}
+
+.newsLetterName, .newsLetterEmail{
+    transform: translate(0,20%);
+}
+
+.newsLetterSignature p{
+    width: 56px;
+    margin: 0;
+    padding: 5px;
+}
+
+/* ------------------------------------------- */
+
+.buttonSignature{
+    width: 150px;
+    left: 22%;
+    transform: translate(0,40%);
+    position: relative;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: rgb(189, 240, 247);
+}
+
+.buttonSignature h3{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.7s;
+}
+
+.buttonSignature a:link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.buttonSignature a:visited{
+    color: rgb(0, 0, 0);
+}
+
+.buttonSignature a:hover{
+    color: rgb(116, 116, 233);
+}
+
+.buttonSignature a:active{
+    color: rgb(0, 0, 0);
+}
+
+/* ------------------------------------------- */
+
+.responsibility{
+    position: relative;
+    transform: translate(0, 130%);
+}
+
+.responsibility p{
+    margin: 0;
+    text-align: justify;
+    margin: 2px;
+    color: white;
+}
+
+/* ------------------------------------------- */
+
+.contentAsideBox2{
+    height: 800px;
+    position: relative;
+}
+
+.mostPopularPostsBox1 h3{
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid;
+}
+
+.popularPostSize{
+    width: 100%;
+    height: 102px;
+    position: relative;
+    margin-bottom: 5px;
+    border: solid 1px;
+    border-radius: 4px;
+}
+
+.popularPostImg1, .popularPostImg2, .popularPostImg3{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 1px;
+}
+
+.popularPostImg1{
+    background-image: url('Imagens/Imagens-Posts-Populares/Img1.webp');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.popularPostImg2{
+    background-image: url('Imagens/Imagens-Posts-Populares/Img2.webp');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.popularPostImg3{
+    background-image: url('Imagens/Imagens-Posts-Populares/Img3.webp');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.popularPostDescription{
+    width: 150px;
+    height: 100px;
+    float: right;
+    transform: translate(0, 3%);
+    padding: 5px 5px 0 0;
+}
+
+.popularPostDescription p{
+    margin: 0;
+}
+
+/*Fim do tratamento do newsletter*/
 
 /*Fim do tratamento do embrulho*/
 
