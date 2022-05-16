@@ -4,179 +4,174 @@ Forma como os cõdigos CSS foram organizados:
 Conteúdo do body em cascata.
 
 Padrão adotado para organizar os elementos dentro de cada container:
+FlexBox
 Dimensionamento
 Posicionamento
 Box Model
 Texto
 Cor
 Animações
+
+Paleta de cores usada:
+Barra superior e inferior: rgb(52, 52, 52)
+Background body: rgb(66, 66, 66)
+Palavras com menor destaque e bordas: Gray
+Background para destaque: rgb(37, 86, 150)
+Sobre o destaque (Quando necessário): rgb(189, 240, 247)
+Hover Sobre o destaque (Os demais são de branco para preto ou vice e versa): rgb(116, 116, 233)
 */
 
 body{
-    margin: auto;
+    margin: 0;
     font-family: Arial, Helvetica, Verdana;
+    background-color: rgb(66, 66, 66);
 }
 
 /*Início do tratamento da barra de navegação.*/
 
-.navigation{
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    background-color: rgb(189, 240, 247);
+.containerNavigationBack{
+    background-color: rgb(52, 52, 52);
 }
 
-.containersNav{
+.containerNavigation{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    width: 1100px;
+    margin: auto;
+    font-size: 15px;
+    color: white;
+}
+
+.navigationOptions{
     width: 180px;
     position: relative;
-    display: inline-block;
-    margin-right: 1%;
+    margin: 5px;
 }
 
-.logoImg{
+.navigationOptions img{
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
-.paragraph{
+.navigationOptions p{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     margin: 0px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .searchBar{
-    margin: 0px;
-    border: 1px solid;
+    border: 1px solid gray;
     border-radius: 15px;
-    padding: 7px 20px;
-    background-color: white;
-}
-
-.navItems{
-    top: 50%;
-    transform: translate(0, -50%);
-    position: relative;
     padding: 5px;
-    text-align: center;
+    color: black;
+    background-color: white;
 }
 
 /*Fim do tratamento da barra de navegação.*/
 
 /*Início do tratamento do banner principal*/
 
-.bannerMain{
+.containerBannerMain{
+    display: flex;
+    flex-direction: row;
     width: 1100px;
     height: 500px;
-    display: flex;
     margin: auto;
 }
 
-.bannerMainContent{
-    height: 500px;
-    width: 359px;
-    text-transform: uppercase;
-    font-weight: bold;
-    display: inline-block;
-    color: white;
-}
-
-.ransom{
+.bannerMainPost1{
     width: 50%;
     position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
+    background-size: cover;
     background-image: url('Imagens/Imagens-Banner-Principal/ransomware.jpg');
 }
 
-.api{
+.bannerMainPost2{
     width: 25%;
     position: relative;
-    background-repeat: no-repeat;
     background-size: cover;
     background-image: url('Imagens/Imagens-Banner-Principal/api-web.jpeg');
 }
 
-.logisticSecurity{
+.bannerMainPost3{
     width: 25%;
     position: relative;
-    background-repeat: no-repeat;
     background-size: cover;
     background-image: url('Imagens/Imagens-Banner-Principal/seguranca-logistica.jpg');
 }
 
-div.bannerMainContent h2 {
-    width: 120px;
-    position: relative;
-    top: 80%;
-    transform: translate(0, -20%);
-    margin-left: 1%;
+.bannerMainDescripition{
+    position: absolute;
+    top: 87%;
+    transform: translate(0, -13%);
+    margin: 0 1% 0;
     border-radius: 4px;
-    font-size: 16px;
-    text-align: center;
+}
+
+.containerBannerMain p{
+    margin: 0;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: all 0.7s;
 }
 
-.bannerMainContent a:link{
+.containerBannerMain a:link{
     text-decoration: none;
     color: white;
 }
 
-.bannerMainContent a:visited{
+.containerBannerMain a:visited{
     color: white;
 }
 
-.bannerMainContent a:hover{
-    color: rgb(0, 0, 255);
+.containerBannerMain a:hover{
+    color: rgb(0, 0, 0);
 }
 
-.bannerMainContent a:active{
+.containerBannerMain a:active{
     color: aqua;
-}
-
-div.bannerMainContent p{
-    position: relative;
-    top: 80%;
-    transform: translate(0, -20%);
-    margin: 0 1% 0;
-    border-radius: 4px;
-    padding: 5px;
-    font-size: 14px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 /*Fim do tratamento do banner principal*/
 
 /*Início do tratamento do embrulho*/
 
-.wrapper{
-    max-width: 1100px;
-    margin: auto;
-    margin-bottom: 15px;
-}
-
-.contentWrapper{
-    position: relative;
+.containerWrapper{
     display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    margin: 15px auto 15px;
 }
 
 /*Início do tratamento dos posts*/
-
-.posts{
-    margin: 15px 15px 0px 0;
+.containerWrapperBox1{
+    width: 800px;
+    margin-right: 20px;
 }
 
 .post{
-    width: 800px;
+    width: 100%;
     height: 300px;
-    position: relative;
     margin-bottom: 15px;
     border: solid 1px gray;
     border-radius: 4px;
     padding: 5px;
+    color: white;
 }
 
 .imgPost{
@@ -184,36 +179,78 @@ div.bannerMainContent p{
     height: 99%;
     float: left;
     margin-right: 10px;
+    border-radius: 4px;
+}
+
+.imgPost1{
+    background-size: cover;
+    background-image: url('Imagens/Imagens-Posts/imgPost1.jpg');
+}
+
+.imgPost2{
+    background-size: cover;
+    background-position: 80%;
+    background-image: url('Imagens/Imagens-Posts/imgPost2.jpg');
+}
+
+.imgPost3{
+    background-size: cover;
+    background-position: 80%;
+    background-image: url('Imagens/Imagens-Posts/imgPost3.jpeg');
+}
+
+.imgPost4{
+    background-size: cover;
+    background-position: 50%;
+    background-image: url('Imagens/Imagens-Posts/imgPost4.jpeg');
+}
+
+.imgPost5{
+    background-size: cover;
+    background-position: 50%;
+    background-image: url('Imagens/Imagens-Posts/imgPost5.jpg');
+}
+
+.linkReference a:link{
+    text-decoration: none;
+}
+
+.linkReference a:visited{
+    color: gray;
 }
 
 .informations{
-    width: 460px;
+    position: relative;
+    width: 450px;
     height: 300px;
     float: right;
 }
 
-div.informations h4{
+.informations h4{
     margin: 0;
-    margin-bottom: 5px;
+    margin: 5px 0 5px;
     text-transform: uppercase;
+    color: gray;
 }
 
-div.informations h2{
+.informations h2{
     margin: 0;
     margin-bottom: 5px;
 }
 
-div.informations cite{
+.informations cite{
     margin: 0;
     margin-bottom: 5px;
     color: gray;
 }
 
 .descriptionPost{
-    height: 100px;
-    position: relative;
-    top: 5%;
-    transform: translate(0. -95%);
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -40%);
     padding: 5px;
 }
 
@@ -225,153 +262,168 @@ div.informations cite{
 }
 
 .readMore{
-    position: relative;
-    top: 12%;
-}
-
-div.readMore p{
-    width: 118px;
+    width: 130px;
+    position: absolute;
+    top: 90%;
+    transform: translate(0%, -10%);
     margin: 0;
-    border: solid 1px;
+    border: solid 1px gray;
     border-radius: 54px;
     padding: 5px;
+    background-color: rgb(37, 86, 150);
+    transition: all 0.7s;
+}
+
+.readMore p{
+    margin: 0;
     text-align: center;
-    background-color: rgb(116, 116, 233);
+    /* color: white; */
+    transition: all 0.7s;
+}
+
+.readMore a:link{
+    text-decoration: none;
+}
+
+.readMore a:visited{
     color: white;
 }
 
-div.readMore a:link{
-    text-decoration: none;
+.readMore a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.readMore a:active{
+    color: aqua;
 }
 
 /*Fim do tratamento dos posts*/
 
 /*Início do tratamento do newsletter*/
 
-.contentAside{
+.containerWrapperBox2{
     width: 300px;
-    margin-top: 15px;
-    display: flex;
-    display: block;
 }
 
-.contentAsideBox1{
+.containerAsideBox1{
     width: 100%;
     height: 400px;
     position: relative;
     margin-bottom: 20px;
-}
-
-.contentFixed{
-    width: 100%;
-    height: 400px;
-    position: relative;
-    border: solid 1px;
+    border: solid 1px gray;
     border-radius: 10px;
-    background-color: rgb(116, 116, 233);
-}
-
-.newsLetter{
-    height: 150px;
-    border-radius: 10px;
+    background-color: rgb(37, 86, 150);
 }
 
 .newsLetterBox1{
-    width: 70%;
-    left: 15%;
-    border-radius: 4px;
-    transform: translate(0, 50%);
-    position: relative;
-    background-color: rgb(189, 240, 247);
-}
-
-.newsLetterBox2{
-    width: 85%;
-    left: 8%;
-    transform: translate(0, 65%);
-    position: relative;
-    color: white;
-}
-
-.newsLetter p, .newsLetter h3{
-    margin: 0;
-    text-align: center;
-}
-
-/* ------------------------------------------- */
-
-.newsLetterSignature{
-    height: 72px;
-    margin: 2px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.boxTip{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.boxName, .boxEmail{
-    width: 191px;
-    height: 30px;
-    border-bottom: 1px solid;
-}
-
-.newsLetterName, .newsLetterEmail{
-    transform: translate(0,20%);
-}
-
-.newsLetterSignature p{
-    width: 56px;
-    margin: 0;
-    padding: 5px;
-}
-
-/* ------------------------------------------- */
-
-.buttonSignature{
     width: 150px;
-    left: 22%;
-    transform: translate(0,40%);
-    position: relative;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -85%);
     border: 1px solid;
     border-radius: 4px;
     background-color: rgb(189, 240, 247);
 }
 
-.buttonSignature h3{
+.newsLetterBox2{
+    width: 95%;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -72%);
+    color: white;
+}
+
+.newsLetterBox1 h3, .newsLetterBox2 p{
+    margin: 0;
+    text-align: center;
+}
+
+.newsLetterBox3{
+    display: flex;
+    flex-flow: row wrap;
+    width: 98%;
+    height: 70px;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -56%);
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.newsLetterName, .newsLetterEmail{
+    width: 66px;
+    position: relative;
+}
+
+.newsLetterName p, .newsLetterEmail p{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -40%);
+    margin: 0;
+    text-align: center;
+}
+
+.boxName, .boxEmail{
+    width: 220px;
+    height: 30px;
+    border-bottom: 1px solid;
+}
+
+.newsLetterBox4{
+    width: 150px;
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -44%);
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: rgb(189, 240, 247);
+}
+
+.newsLetterBox4 h3{
     margin: 0;
     padding: 10px;
     text-align: center;
     transition: all 0.7s;
 }
 
-.buttonSignature a:link{
+.newsLetterBox4 a:link{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
 
-.buttonSignature a:visited{
+.newsLetterBox4 a:visited{
     color: rgb(0, 0, 0);
 }
 
-.buttonSignature a:hover{
+.newsLetterBox4 a:hover{
     color: rgb(116, 116, 233);
 }
 
-.buttonSignature a:active{
+.newsLetterBox4 a:active{
     color: rgb(0, 0, 0);
 }
 
-/* ------------------------------------------- */
-
-.responsibility{
-    position: relative;
-    transform: translate(0, 130%);
+.newsLetterBox5{
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -14%);
 }
 
-.responsibility p{
+.newsLetterBox5 p{
     margin: 0;
     text-align: justify;
     margin: 2px;
@@ -380,25 +432,29 @@ div.readMore a:link{
 
 /* ------------------------------------------- */
 
-.contentAsideBox2{
+.containerAsideBox2{
     height: 800px;
     position: relative;
+    color: white;
 }
 
-.mostPopularPostsBox1 h3{
+.mostPopularPosts{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.mostPopularPosts h3{
     margin: 0;
     text-transform: uppercase;
     line-height: 30px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid gray;
 }
 
 .popularPostSize{
     width: 100%;
     height: 102px;
-    position: relative;
     margin-bottom: 5px;
-    border: solid 1px;
+    border: solid 1px gray;
     border-radius: 4px;
 }
 
@@ -407,6 +463,7 @@ div.readMore a:link{
     height: 100px;
     float: left;
     margin: 1px;
+    border-radius: 4px;
 }
 
 .popularPostImg1{
@@ -428,15 +485,27 @@ div.readMore a:link{
 }
 
 .popularPostDescription{
-    width: 150px;
-    height: 100px;
+    width: 180px;
     float: right;
     transform: translate(0, 3%);
-    padding: 5px 5px 0 0;
+    margin: 5px;
 }
 
 .popularPostDescription p{
     margin: 0;
+    transition: all 0.7s;
+}
+
+.popularPostDescription a:link{
+    text-decoration: none;
+}
+
+.popularPostDescription a:visited{
+    color: white;
+}
+
+.popularPostDescription a:hover{
+    color: rgb(116, 116, 233);
 }
 
 /*Fim do tratamento do newsletter*/
@@ -452,23 +521,23 @@ div.readMore a:link{
 }
 
 .switchButtons{
+    display: flex;
     width: 176px;
     position: relative;
-    display: flex;
-    border: solid 1px;
+    border: solid 1px gray;
     border-radius: 4px;
-    background-color: rgb(116, 116, 233);
+    background-color: rgb(37, 86, 150);
 }
 
 .switchButtonFirst{
     width: 35px;
-    border-right: solid 1px;
-    background-color: rgb(0, 0, 255);
+    border-right: solid 1px gray;
+    background-color: rgb(189, 240, 247);
 }
 
 .switchButtonContent{
     width: 35px;
-    border-right: solid 1px;
+    border-right: solid 1px gray;
 }
 
 .switchButtonLast{
@@ -479,20 +548,20 @@ div.readMore a:link{
     margin: 0;
     padding: 5px;
     text-align: center;
+    /* color: white; */
     transition: all 0.7s;
 }
 
 .switchButtons a:link{
     text-decoration: none;
-    color: white;
 }
 
 .switchButtons a:visited{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .switchButtons a:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(116, 116, 233);
 }
 
 .switchButtons a:active{
@@ -503,60 +572,50 @@ div.readMore a:link{
 
 /*Início do tratamento do rodapé principal*/
 
-.backGroundFooter{
+.containerFooterBack{
     background-color: rgb(52, 52, 52);
 }
 
-.mainFooter{
+.containerFooter{
+    display: flex;
+    flex-direction: row;
     width: 1100px;
     height: 200px;
     margin: auto;
     background-color: rgb(52, 52, 52);
 }
 
-.mainFooterContent{
-    width: 1100px;
-    margin: 0;
-    display: flex;
-    position: relative;
-}
-
-.mainFooterContent1, .mainFooterContent2, .mainFooterContent3{
+.mainFooterBox1, .mainFooterBox2, .mainFooterBox3{
     width: 33.3%;
     margin: 0;
     position: relative;
 }
 
-.footerLogo{
-    position: relative;
-    top: 100%;
+.footerLogo, .footerAddress, .footerAutor{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin: 5px;
 }
 
 .footerLogo img{
     width: 100%;
-    position: relative;
 }
 
-.footerAddress{
-    position: relative;
-    top: 115%;
-    right: 20%;
-}
-
-.footerAddress pre{
-    width: 200px;
-    position: relative;
+.footerAddress p{
+    width: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     color: white;
 }
 
-.footerAutor{
-    top: 115%;
-    position: relative;
-    padding-left: 50px;
+.footerAutor address{
+    width: 100%;
     color: white;
+    transition: all 0.7s;
 }
 
 .footerAutor a:link{
