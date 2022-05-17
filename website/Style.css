@@ -16,9 +16,9 @@ Paleta de cores usada:
 Barra superior e inferior: rgb(52, 52, 52)
 Background body: rgb(66, 66, 66)
 Palavras com menor destaque e bordas: Gray
-Background para destaque: rgb(37, 86, 150)
-Sobre o destaque (Quando necessário): rgb(189, 240, 247)
-Hover Sobre o destaque (Os demais são de branco para preto ou vice e versa): rgb(116, 116, 233)
+Background para destaque: rgb(4, 48, 105)
+Sobre o destaque (Quando necessário): rgb(53, 129, 190)
+Links: rgb(0, 153, 255)
 */
 
 body{
@@ -83,8 +83,86 @@ body{
 
 /*Fim do tratamento da barra de navegação.*/
 
-/*Início do tratamento do banner principal*/
+/*Início do tratamento do card de apresentação*/
 
+.containerCard{
+    width: 1100px;
+    height: 500px;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: url('Imagens/Card/Card.jpg');
+    filter: grayscale(0.5);
+    color: white;
+    transition: 0.7s;
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 420px;
+    margin-right: 1%;
+    text-align: center;
+}
+
+.cardContent::before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 1px solid;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.cardContent h2{
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.7s;
+}
+
+.cardContent p{
+    font-size: 0px;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+
+.card:hover{
+    filter: unset;
+}
+
+.card:hover > .cardContent::before{
+    width: 400px;
+    height: 300px;
+    opacity: 1;
+}
+
+.card:hover > .cardContent p{
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+
+/*Fim do tratamento do card de apresentação*/
+
+/*Início do tratamento do banner principal*/
+/* 
 .containerBannerMain{
     display: flex;
     flex-direction: row;
@@ -148,7 +226,7 @@ body{
 
 .containerBannerMain a:active{
     color: aqua;
-}
+} */
 
 /*Fim do tratamento do banner principal*/
 
@@ -274,7 +352,7 @@ body{
     border: solid 1px gray;
     border-radius: 54px;
     padding: 5px;
-    background-color: rgb(37, 86, 150);
+    background-color: rgb(4, 48, 105);
     transition: all 0.7s;
 }
 
@@ -294,11 +372,7 @@ body{
 }
 
 .readMore a:hover{
-    color: rgb(0, 0, 0);
-}
-
-.readMore a:active{
-    color: aqua;
+    color: rgb(0, 153, 255);
 }
 
 /*Fim do tratamento dos posts*/
@@ -310,134 +384,6 @@ body{
 }
 
 .containerAsideBox1{
-    width: 100%;
-    height: 400px;
-    position: relative;
-    margin-bottom: 20px;
-    border: solid 1px gray;
-    border-radius: 10px;
-    background-color: rgb(37, 86, 150);
-}
-
-.newsLetterBox1{
-    width: 150px;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -85%);
-    border: 1px solid;
-    border-radius: 4px;
-    background-color: rgb(189, 240, 247);
-}
-
-.newsLetterBox2{
-    width: 95%;
-    position: absolute;
-    top: 28%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -72%);
-    color: white;
-}
-
-.newsLetterBox1 h3, .newsLetterBox2 p{
-    margin: 0;
-    text-align: center;
-}
-
-.newsLetterBox3{
-    display: flex;
-    flex-flow: row wrap;
-    width: 98%;
-    height: 70px;
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -56%);
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.newsLetterName, .newsLetterEmail{
-    width: 66px;
-    position: relative;
-}
-
-.newsLetterName p, .newsLetterEmail p{
-    width: 100%;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -40%);
-    margin: 0;
-    text-align: center;
-}
-
-.boxName, .boxEmail{
-    width: 220px;
-    height: 30px;
-    border-bottom: 1px solid;
-}
-
-.newsLetterBox4{
-    width: 150px;
-    position: absolute;
-    top: 66%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -44%);
-    border: 1px solid;
-    border-radius: 4px;
-    background-color: rgb(189, 240, 247);
-}
-
-.newsLetterBox4 h3{
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    transition: all 0.7s;
-}
-
-.newsLetterBox4 a:link{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-.newsLetterBox4 a:visited{
-    color: rgb(0, 0, 0);
-}
-
-.newsLetterBox4 a:hover{
-    color: rgb(116, 116, 233);
-}
-
-.newsLetterBox4 a:active{
-    color: rgb(0, 0, 0);
-}
-
-.newsLetterBox5{
-    position: absolute;
-    top: 86%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -14%);
-}
-
-.newsLetterBox5 p{
-    margin: 0;
-    text-align: justify;
-    margin: 2px;
-    color: white;
-}
-
-/* ------------------------------------------- */
-
-.containerAsideBox2{
-    height: 800px;
     position: relative;
     color: white;
 }
@@ -502,6 +448,7 @@ body{
 
 .popularPostDescription a:link{
     text-decoration: none;
+    color: white;
 }
 
 .popularPostDescription a:visited{
@@ -509,7 +456,131 @@ body{
 }
 
 .popularPostDescription a:hover{
-    color: rgb(116, 116, 233);
+    color: rgb(0, 153, 255);
+}
+
+/* ------------------------------------------- */
+
+.containerAsideBox2{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: 15px 0 15px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    background-color: rgb(4, 48, 105);
+}
+
+.newsLetterBox1{
+    width: 150px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -85%);
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(53, 129, 190);
+}
+
+.newsLetterBox2{
+    width: 95%;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -72%);
+    color: white;
+}
+
+.newsLetterBox1 h3, .newsLetterBox2 p{
+    margin: 0;
+    text-align: center;
+}
+
+.newsLetterBox3{
+    display: flex;
+    flex-flow: row wrap;
+    width: 98%;
+    height: 70px;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -56%);
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.newsLetterName, .newsLetterEmail{
+    width: 66px;
+    position: relative;
+}
+
+.newsLetterName p, .newsLetterEmail p{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -40%);
+    margin: 0;
+    text-align: center;
+}
+
+.boxName, .boxEmail{
+    width: 220px;
+    height: 30px;
+    border-bottom: 1px solid;
+}
+
+.newsLetterBox4{
+    width: 150px;
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -44%);
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: rgb(53, 129, 190);
+}
+
+.newsLetterBox4 h3{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.7s;
+}
+
+.newsLetterBox4 a:link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.newsLetterBox4 a:visited{
+    color: rgb(255, 255, 255);
+}
+
+.newsLetterBox4 a:hover{
+    color: rgb(0, 153, 255);
+}
+
+.newsLetterBox5{
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -14%);
+}
+
+.newsLetterBox5 p{
+    margin: 0;
+    text-align: justify;
+    margin: 2px;
+    color: white;
 }
 
 /*Fim do tratamento do newsletter*/
@@ -530,13 +601,13 @@ body{
     position: relative;
     border: solid 1px gray;
     border-radius: 4px;
-    background-color: rgb(37, 86, 150);
+    background-color: rgb(4, 48, 105);
 }
 
 .switchButtonFirst{
     width: 35px;
     border-right: solid 1px gray;
-    background-color: rgb(189, 240, 247);
+    background-color: rgb(53, 129, 190);
 }
 
 .switchButtonContent{
@@ -557,6 +628,7 @@ body{
 
 .switchButtons a:link{
     text-decoration: none;
+    color: white;
 }
 
 .switchButtons a:visited{
@@ -564,11 +636,7 @@ body{
 }
 
 .switchButtons a:hover{
-    color: rgb(116, 116, 233);
-}
-
-.switchButtons a:active{
-    color: aqua;
+    color: rgb(0, 153, 255);
 }
 
 /*Fim do tratamento do trocador de páginas*/
@@ -648,7 +716,7 @@ body{
 /*Revisar o código abaixo*/
 
 /*Início do tratamento do banner de apresentação.*/
-/*
+/* 
 .bannerAboutUs{
     width: 1100px;
     height: 500px;
