@@ -28,9 +28,9 @@ body{
 /*Início do tratamento da barra de navegação.*/
 
 .containerNavigation{
+    width: 100%;
     position: fixed;
     z-index: 1;
-    width: 100%;
     background-color: rgb(52, 52, 52);
 }
 
@@ -95,12 +95,14 @@ body{
 
 /*Fim do tratamento da barra de navegação.*/
 
-/* Este bloco foi criado apenas para aparar o background da barra de navegação. */
+/*Este bloco foi criado apenas para aparar o background da barra de navegação*/
 .null{
     width: 100%;
     height: 45px;
 }
 /**/
+
+/*Início da Index*/
 
 /*Início do tratamento do card de apresentação*/
 
@@ -180,75 +182,6 @@ body{
 
 /*Fim do tratamento do card de apresentação*/
 
-/*Início do tratamento do banner principal*/
-/* 
-.containerBannerMain{
-    display: flex;
-    flex-direction: row;
-    width: 1100px;
-    height: 500px;
-    margin: auto;
-}
-
-.bannerMainPost1{
-    width: 50%;
-    position: relative;
-    background-size: cover;
-    background-image: url('Imagens/Imagens-Banner-Principal/ransomware.jpg');
-}
-
-.bannerMainPost2{
-    width: 25%;
-    position: relative;
-    background-size: cover;
-    background-image: url('Imagens/Imagens-Banner-Principal/api-web.jpeg');
-}
-
-.bannerMainPost3{
-    width: 25%;
-    position: relative;
-    background-size: cover;
-    background-image: url('Imagens/Imagens-Banner-Principal/seguranca-logistica.jpg');
-}
-
-.bannerMainDescripition{
-    position: absolute;
-    top: 87%;
-    transform: translate(0, -13%);
-    margin: 0 1% 0;
-    border-radius: 4px;
-}
-
-.containerBannerMain p{
-    margin: 0;
-    padding: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    transition: all 0.7s;
-}
-
-.containerBannerMain a:link{
-    text-decoration: none;
-    color: white;
-}
-
-.containerBannerMain a:visited{
-    color: white;
-}
-
-.containerBannerMain a:hover{
-    color: rgb(0, 0, 0);
-}
-
-.containerBannerMain a:active{
-    color: aqua;
-} */
-
-/*Fim do tratamento do banner principal*/
-
 /*Início do tratamento do embrulho*/
 
 .containerWrapper{
@@ -260,11 +193,16 @@ body{
 
 /*Início do tratamento dos posts*/
 .containerWrapperBox1{
-    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 780px;
     margin-right: 20px;
 }
 
 .post{
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 300px;
     margin-bottom: 15px;
@@ -275,9 +213,10 @@ body{
 }
 
 .imgPost{
+    display: flex;
+    justify-content: flex-start;
     width: 320px;
     height: 99%;
-    float: left;
     margin-right: 10px;
     border-radius: 4px;
 }
@@ -311,24 +250,16 @@ body{
     background-image: url('Imagens/Imagens-Posts/imgPost5.jpg');
 }
 
-.linkReference a:link{
-    text-decoration: none;
-    color: gray;
-}
-
-.linkReference a:visited{
-    color: gray;
-}
-
 .informations{
-    position: relative;
-    width: 450px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 480px;
     height: 300px;
     float: right;
 }
 
 .informations h4{
-    margin: 0;
     margin: 5px 0 5px;
     text-transform: uppercase;
     color: gray;
@@ -341,22 +272,21 @@ body{
 
 .informations cite{
     margin: 0;
-    margin-bottom: 5px;
+    color: gray;
+}
+
+.linkReference a:link{
+    text-decoration: none;
+    color: gray;
+}
+
+.linkReference a:visited{
     color: gray;
 }
 
 .descriptionPost{
-    width: 100%;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -40%);
+    margin: 40px 0 40px ;
     padding: 5px;
-}
-
-.descriptionPost p{
-    margin: 0;
     text-align: justify;
     text-indent: 30px;
     line-height: 25px;
@@ -364,9 +294,6 @@ body{
 
 .readMore{
     width: 130px;
-    position: absolute;
-    top: 90%;
-    transform: translate(0%, -10%);
     margin: 0;
     border: solid 1px gray;
     border-radius: 54px;
@@ -403,7 +330,8 @@ body{
 }
 
 .containerAsideBox1{
-    position: relative;
+    display: flex;
+    flex-direction: column;
     color: white;
 }
 
@@ -420,6 +348,8 @@ body{
 }
 
 .popularPostSize{
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 102px;
     margin-bottom: 5px;
@@ -427,10 +357,11 @@ body{
     border-radius: 4px;
 }
 
-.popularPostImg1, .popularPostImg2, .popularPostImg3{
+.popularPostImg{
+    display: flex;
+    justify-content: flex-start;
     width: 100px;
     height: 100px;
-    float: left;
     margin: 1px;
     border-radius: 4px;
 }
@@ -454,9 +385,10 @@ body{
 }
 
 .popularPostDescription{
-    width: 180px;
-    float: right;
-    transform: translate(0, 3%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 200px;
     margin: 5px;
 }
 
@@ -481,9 +413,12 @@ body{
 /* ------------------------------------------- */
 
 .containerAsideBox2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 400px;
-    position: relative;
     margin: 15px 0 15px;
     border: solid 1px gray;
     border-radius: 10px;
@@ -492,11 +427,6 @@ body{
 
 .newsLetterBox1{
     width: 150px;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -85%);
     border: 1px solid gray;
     border-radius: 4px;
     color: white;
@@ -504,12 +434,8 @@ body{
 }
 
 .newsLetterBox2{
-    width: 95%;
-    position: absolute;
-    top: 28%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -72%);
+    width: 100%;
+    margin-top: 20px;
     color: white;
 }
 
@@ -521,13 +447,11 @@ body{
 .newsLetterBox3{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     width: 98%;
     height: 70px;
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -56%);
+    margin: 20px 0 20px;
     border: 1px solid;
     border-radius: 10px;
     background-color: white;
@@ -535,16 +459,10 @@ body{
 
 .newsLetterName, .newsLetterEmail{
     width: 66px;
-    position: relative;
 }
 
 .newsLetterName p, .newsLetterEmail p{
     width: 100%;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -40%);
     margin: 0;
     text-align: center;
 }
@@ -557,11 +475,7 @@ body{
 
 .newsLetterBox4{
     width: 150px;
-    position: absolute;
-    top: 66%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -44%);
+    margin-bottom: 20px;
     border: 1px solid gray;
     border-radius: 4px;
     background-color: rgb(53, 129, 190);
@@ -588,15 +502,10 @@ body{
 }
 
 .newsLetterBox5{
-    position: absolute;
-    top: 86%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -14%);
+    margin: 0 2px 0;
 }
 
 .newsLetterBox5 p{
-    margin: 0;
     text-align: justify;
     margin: 2px;
     color: white;
@@ -616,8 +525,8 @@ body{
 
 .switchButtons{
     display: flex;
+    flex-direction: row;
     width: 176px;
-    position: relative;
     border: solid 1px gray;
     border-radius: 4px;
     background-color: rgb(4, 48, 105);
@@ -660,6 +569,8 @@ body{
 
 /*Fim do tratamento do trocador de páginas*/
 
+/*Fim da Index*/
+
 /*Início do tratamento do rodapé principal*/
 
 .containerFooterBack{
@@ -669,27 +580,23 @@ body{
 .containerFooter{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 1100px;
     height: 200px;
     margin: auto;
     background-color: rgb(52, 52, 52);
 }
 
-.mainFooterBox1, .mainFooterBox2, .mainFooterBox3{
+.mainFooterBox{
     width: 33.3%;
     margin: 0;
-    position: relative;
 }
 
-.footerLogo, .footerAddress, .footerAutor{
+/* .footerLogo, .footerAddress, .footerAutor{
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
     margin: 5px;
-}
+} */
 
 .footerLogo img{
     width: 100%;
@@ -732,7 +639,7 @@ body{
 /*Fim do tratamento do rodapé principal*/
 
 
-/*Revisar o código abaixo*/
+/*Revisar os códigos abaixo*/
 
 /*Início do tratamento do banner de apresentação.*/
 /* 
@@ -817,3 +724,72 @@ body{
 }
 */
 /*Fim do tratamento do banner de apresentação.*/
+
+/*Início do tratamento do banner principal*/
+/* 
+.containerBannerMain{
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    height: 500px;
+    margin: auto;
+}
+
+.bannerMainPost1{
+    width: 50%;
+    position: relative;
+    background-size: cover;
+    background-image: url('Imagens/Imagens-Banner-Principal/ransomware.jpg');
+}
+
+.bannerMainPost2{
+    width: 25%;
+    position: relative;
+    background-size: cover;
+    background-image: url('Imagens/Imagens-Banner-Principal/api-web.jpeg');
+}
+
+.bannerMainPost3{
+    width: 25%;
+    position: relative;
+    background-size: cover;
+    background-image: url('Imagens/Imagens-Banner-Principal/seguranca-logistica.jpg');
+}
+
+.bannerMainDescripition{
+    position: absolute;
+    top: 87%;
+    transform: translate(0, -13%);
+    margin: 0 1% 0;
+    border-radius: 4px;
+}
+
+.containerBannerMain p{
+    margin: 0;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.7s;
+}
+
+.containerBannerMain a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.containerBannerMain a:visited{
+    color: white;
+}
+
+.containerBannerMain a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.containerBannerMain a:active{
+    color: aqua;
+} */
+
+/*Fim do tratamento do banner principal*/
