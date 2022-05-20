@@ -504,6 +504,7 @@ body{
 
 .newsLetterBox1{
     width: 150px;
+    margin-top: 20px;
     border: 1px solid gray;
     border-radius: 4px;
     color: white;
@@ -523,35 +524,56 @@ body{
 
 .newsLetterBox3{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin: 20px 0 20px;
+}
+
+.userData{
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 98%;
-    height: 70px;
-    margin: 20px 0 20px;
+    width: 90%;
+    height: 60px;
+    margin-bottom: 10%;
     border: 1px solid gray;
     border-radius: 10px;
     background-color: #535353;
 }
 
-.newsLetterName, .newsLetterEmail{
-    width: 66px;
+.userName, .userEmail{
+    width: 20%;
+    color: rgba(255, 255, 255, 0.96);
 }
 
-.newsLetterName p, .newsLetterEmail p{
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.67);
-}
-
-.boxName, .boxEmail{
-    width: 220px;
-    height: 30px;
+.userBorder{
+    display: flex;
+    align-items: center;
+    width: 72%;
     border-bottom: 1px solid gray;
 }
 
-.newsLetterBox4{
+.userTip{
+    width: 90%;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.67);
+}
+
+.userBorder i{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 3px;
+}
+
+.userButton{
+    display: flex;
+    justify-content: center;
     width: 150px;
     margin-bottom: 20px;
     border: 1px solid gray;
@@ -559,31 +581,22 @@ body{
     background-color: #043069;
 }
 
-.newsLetterBox4 h3{
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    transition: all 0.7s;
+.userSubmitNews{
+    width: 70%;
+    border: none;
+    background: none;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.96);
+    cursor: pointer;
 }
 
-.newsLetterBox4 a:link{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-.newsLetterBox4 a:visited{
-    color: rgb(255, 255, 255);
-}
-
-.newsLetterBox4 a:hover{
-    color: rgb(0, 153, 255);
-}
-
-.newsLetterBox5{
+.newsLetterBox4{
     margin: 0 2px 0;
 }
 
-.newsLetterBox5 p{
+.newsLetterBox4 p{
     text-align: justify;
     margin: 2px;
     color: rgba(255, 255, 255, 0.45);
