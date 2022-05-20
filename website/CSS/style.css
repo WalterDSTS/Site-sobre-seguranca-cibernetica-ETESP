@@ -1,5 +1,5 @@
 /*
-Forma como os cõdigos CSS foram organizados:
+Forma como os códigos CSS foram organizados:
 
 Padrão adotado para organizar os elementos dentro de cada container:
 FlexBox
@@ -169,7 +169,66 @@ body{
     width: 100%;
     height: 45px;
 }
-/**/
+/* ------------------------------------------- */
+
+/*Início do tratamento do rodapé principal*/
+
+.containerFooterBack{
+    background-color: #242424;
+}
+
+.containerFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1100px;
+    height: 200px;
+    margin: auto;
+}
+
+.mainFooterBox{
+    width: 33.3%;
+    margin: 0;
+}
+
+.footerLogo img{
+    width: 100%;
+}
+
+.footerAddress p{
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+    color: white;
+}
+
+.footerAutor{
+    width: 100%;
+    color: white;
+}
+
+.footerAutor i{
+    transition: all 0.7s;
+}
+
+.footerAutor a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.footerAutor a:visited{
+    color: white;
+}
+
+.footerAutor a:hover{
+    color: rgb(0, 153, 255);
+}
+
+.footerAutor a:active{
+    color: aqua;
+}
+
+/*Fim do tratamento do rodapé principal*/
 
 /*Início da Index*/
 
@@ -278,7 +337,7 @@ body{
     width: 100%;
     height: 300px;
     margin-bottom: 15px;
-    border: solid 1px gray;
+    /* border: solid 1px gray; */
     border-radius: 4px;
     padding: 5px;
     background-color: #242424;
@@ -428,7 +487,7 @@ body{
     width: 100%;
     height: 102px;
     margin-bottom: 5px;
-    border: solid 1px gray;
+    /* border: solid 1px gray; */
     border-radius: 4px;
     background-color: #242424;
 }
@@ -490,14 +549,100 @@ body{
 /* ------------------------------------------- */
 
 .containerAsideBox2{
+    width: 100%;
+    height: 600px;
+    margin: 15px 0 15px;
+}
+
+.cardNewsBusiness{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-position: 49.5%;
+    background-image: url('Imagens/Futuros-Negócios/newsBusiness.jpg');
+    transition: 0.7s;
+}
+
+.cardNewsBusinessContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 95%;
+    height: 250px;
+    text-align: center;
+}
+
+.cardNewsBusinessContent::before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 4px;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.cardNewsBusinessContent h2{
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.96);
+    transition: 0.7s;
+}
+
+.cardNewsBusinessContent p{
+    margin: 10px;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 0px;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.96);
+    background-color: #535353;
+    transition: 0.7s;
+}
+
+.cardNewsBusiness:hover{
+    filter: grayscale(1);
+}
+
+.cardNewsBusiness:hover > .cardNewsBusinessContent::before{
+    width: 100%;
+    height: 300px;
+    opacity: 1;
+}
+
+.cardNewsBusiness:hover > .cardNewsBusinessContent h2{
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #043069;
+}
+
+.cardNewsBusiness:hover > .cardNewsBusinessContent p{
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+
+/* ------------------------------------------- */
+
+.containerAsideBox3{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 400px;
-    margin: 15px 0 15px;
-    border: solid 1px gray;
+    /* border: solid 1px gray; */
     border-radius: 10px;
     background-color: #242424;
 }
@@ -696,67 +841,7 @@ body{
 
 /*Fim da Index*/
 
-/*Início do tratamento do rodapé principal*/
-
-.containerFooterBack{
-    background-color: #242424;
-}
-
-.containerFooter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 1100px;
-    height: 200px;
-    margin: auto;
-}
-
-.mainFooterBox{
-    width: 33.3%;
-    margin: 0;
-}
-
-.footerLogo img{
-    width: 100%;
-}
-
-.footerAddress p{
-    width: 100%;
-    margin: 0;
-    text-align: justify;
-    color: white;
-}
-
-.autor{
-    width: 100%;
-    color: white;
-}
-
-.footerAutor address{
-    display: inline;
-    transition: all 0.7s;
-}
-
-.footerAutor a:link{
-    text-decoration: none;
-    color: white;
-}
-
-.footerAutor a:visited{
-    color: white;
-}
-
-.footerAutor a:hover{
-    color: rgb(0, 153, 255);
-}
-
-.footerAutor a:active{
-    color: aqua;
-}
-
-/*Fim do tratamento do rodapé principal*/
-
-/* Início da segundaPaginaPosts */
+/* Início da segundaPaginaPosts segundaPaginaPosts*/
 
 /*Início do tratamento do banner de notícias*/
 
@@ -825,7 +910,7 @@ body{
 
 /*Fim do tratamento do banner de notícias*/
 
-/*Início do tratamento dos posts*/
+/*Início do tratamento dos posts segundaPaginaPosts*/
 
 .imgPost6{
     background-size: cover;
@@ -855,6 +940,6 @@ body{
     background-image: url('Imagens/Imagens-Posts/imgPost10.jpg');
 }
 
-/*Fim do tratamento dos posts*/
+/*Fim do tratamento dos posts segundaPaginaPosts*/
 
 /* fim da segundaPaginaPosts */
