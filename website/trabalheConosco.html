@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="CSS/Imagens/Favicon/Favicon128.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="CSS/Imagens/Favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JavaScrypt/index.js"></script>
@@ -40,9 +40,108 @@
         </nav>
     </header>
     <div class="null" id="top"></div>
-
-    
-
+    <div class="workWithUs">
+        <div class="workWithUsBanner"></div>
+    </div>
+    <section class="containerWorkWithUs">
+        <div class="workWithUsRegister">
+            <div class="workWithUsTitle">
+                <h1>Quer trabalhar conosco? Cadastre seu currículo no nosso banco de talentos:</h1>
+                <p>Se você tem interesse em trabalhar com segurança digital e está cursando ou formado 
+                em cursos relacionados, envie-nos seus dados!</p>
+            </div>
+            <form action="" class="formWorkWithUs">
+                <div class="workWithUsBox1">
+                    <div class="workWithUsBox2">
+                        <div class="workWithUsDiv">
+                            <label for="name">Nome:</label>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <label for="lastName">Sobrenome:</label>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <label for="LinkedIn">Perfil no LinkedIn:</label>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <label for="cv">Currículo (.pdf, .docx):</label>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <label for="photo">Foto (.jpg, .png, .jpeg):</label>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <label for="birthday">Data de nascimento:</label>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <label for="nationality">Nacionalidade:</label>
+                            </select>
+                        </div>
+                        <div class="workWithUsDiv">
+                            Gênero:
+                        </div>
+                        <div class="workWithUsDiv">
+                            Suas qualidades:
+                        </div>
+                    </div>
+                    <div class="workWithUsBox3">
+                        <div class="workWithUsDiv">
+                            <input type="text" id="name" name="name" class="workWithUsBackGround" required>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <input type="text" id="lastName" name="lastName" class="workWithUsBackGround" required>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <input type="email" name="email" id="email" class="workWithUsBackGround" required>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <input type="url" name="LinkedIn" id="LinkedIn" class="workWithUsBackGround">
+                        </div>
+                        <div class="workWithUsDiv">
+                            <input type="file" name="cv" id="cv" required>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <input type="file" name="photo" id="photo" required>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <input type="date" name="birthday" id="birthday" required>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <select name="nationality" id="nationality" required>
+                            <option value="brasilian">Brasileiro</option>
+                            <option value="russian">Russo</option>
+                            <option value="american">Americano</option>
+                            </select>
+                        </div>
+                        <div class="workWithUsDiv">
+                            <label for="female">F</label>
+                            <input type="radio" name="gender" id="female" value="female" />
+                            <label for="male">M</label>
+                            <input type="radio" name="gender" id="male" value="male" />
+                        </div>
+                        <div class="workWithUsDiv">
+                            <label for="int">Inteligência</label>
+                            <input type="checkbox" name="int" id="int" /> |
+                            <label for="res">Resiliência</label>
+                            <input type="checkbox" name="res" id="res" /> |
+                            <label for="empathy">Empatia</label>
+                            <input type="checkbox" name="empathy" id="empathy" /> |
+                            <label for="teamWork">Trabalho em equipe</label>
+                            <input type="checkbox" name="teamWork" id="teamWork" />
+                        </div>
+                    </div>
+                </div>
+                <div class="workWithUsBox4">
+                    <textarea name="description" id="description" cols="60" rows="10" 
+                    placeholder="Porque você gostaria de trabalhar com Ciber Segurança?" class="workWithUsBackGround"></textarea>
+                </div>
+                <div class="userButton">
+                    <button type="submit" class="userSubmitNews">Enviar Dados</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <footer class="containerFooterBack">
         <footer class="containerFooter">
             <div class="mainFooterBox mainFooterBox1">

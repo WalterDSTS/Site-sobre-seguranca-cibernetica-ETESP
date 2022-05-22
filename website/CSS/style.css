@@ -58,7 +58,7 @@ html{
 body{
     margin: 0;
     font-family: Arial, Helvetica, Verdana;
-    background-color: #1b1b1b;
+    background-color: #242424;
 }
 
 /*Início do tratamento da barra de navegação.*/
@@ -67,7 +67,7 @@ body{
     width: 100%;
     position: fixed;
     z-index: 1;
-    background-color: #242424;
+    background-color: #1b1b1b;
 }
 
 .navigation{
@@ -174,7 +174,7 @@ body{
 /*Início do tratamento do rodapé principal*/
 
 .containerFooterBack{
-    background-color: #242424;
+    background-color: #1b1b1b;
 }
 
 .containerFooter{
@@ -189,6 +189,10 @@ body{
 .mainFooterBox{
     width: 33.3%;
     margin: 0;
+}
+
+.mainFooterBox1{
+    margin-right: 3%;
 }
 
 .footerLogo img{
@@ -230,7 +234,7 @@ body{
 
 /*Fim do tratamento do rodapé principal*/
 
-/*Início da Index*/
+/*Início da página: Index*/
 
 /*Início do tratamento do card de apresentação*/
 
@@ -337,7 +341,7 @@ body{
     width: 100%;
     height: 300px;
     margin-bottom: 15px;
-    /* border: solid 1px gray; */
+    border: solid 1px gray;
     border-radius: 4px;
     padding: 5px;
     background-color: #242424;
@@ -487,7 +491,7 @@ body{
     width: 100%;
     height: 102px;
     margin-bottom: 5px;
-    /* border: solid 1px gray; */
+    border: solid 1px gray;
     border-radius: 4px;
     background-color: #242424;
 }
@@ -550,8 +554,10 @@ body{
 
 .containerAsideBox2{
     width: 100%;
+    border-radius: 4px;
     height: 600px;
     margin: 15px 0 15px;
+    border: 1px solid gray;
 }
 
 .cardNewsBusiness{
@@ -643,7 +649,7 @@ body{
     width: 100%;
     height: 400px;
     margin-bottom: 15px;
-    /* border: solid 1px gray; */
+    border: solid 1px gray;
     border-radius: 10px;
     background-color: #242424;
 }
@@ -754,6 +760,7 @@ body{
     width: 100%;
     height: 198px;
     border: none;
+    border: 1px solid gray;
     border-radius: 4px;
 }
 
@@ -849,9 +856,9 @@ body{
 
 /*Fim do tratamento do trocador de páginas*/
 
-/*Fim da Index*/
+/*Fim da página: Index*/
 
-/* Início da segundaPaginaPosts segundaPaginaPosts*/
+/* Início da página: segundaPaginaPosts*/
 
 /*Início do tratamento do banner de notícias*/
 
@@ -952,4 +959,102 @@ body{
 
 /*Fim do tratamento dos posts segundaPaginaPosts*/
 
-/* fim da segundaPaginaPosts */
+/* Fim da página: segundaPaginaPosts */
+
+/* Início da página: trabalheConosco */
+
+.workWithUs{
+    width: 1100px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.workWithUsBanner{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-size: cover;
+    background-position-y: center;
+    background-image: url('Imagens/Banner-TrabalheConosco/Banner.png');
+}
+
+.containerWorkWithUs{
+    width: 1100px;
+    height: 800px;
+    margin: auto;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.workWithUsRegister{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.workWithUsTitle{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 15%;
+}
+
+.formWorkWithUs{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    height: 85%;
+    margin: auto;
+    margin: 2% 0 2%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: #1b1b1b;
+}
+
+.workWithUsBox1{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.workWithUsBox2{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+}
+
+.workWithUsBox3{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.workWithUsDiv{
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+
+.workWithUsBackGround{
+    width: 98%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.96);
+    background-color: #535353;
+}
+
+.workWithUsBox4{
+    margin: 2% 0 2%;
+}
+
+/* Fim da página: trabalheConosco */
