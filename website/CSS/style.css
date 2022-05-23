@@ -506,19 +506,19 @@ body{
 }
 
 .popularPostImg1{
-    background-image: url('Imagens/Imagens-Posts-Populares/Img1.webp');
+    background-image: url('Imagens/Imagens-Posts-Populares/post1/Img1.webp');
     background-size: cover;
     background-position: 50%;
 }
 
 .popularPostImg2{
-    background-image: url('Imagens/Imagens-Posts-Populares/Img2.webp');
+    background-image: url('Imagens/Imagens-Posts-Populares/post2/Img2.webp');
     background-size: cover;
     background-position: 50%;
 }
 
 .popularPostImg3{
-    background-image: url('Imagens/Imagens-Posts-Populares/Img3.webp');
+    background-image: url('Imagens/Imagens-Posts-Populares/post3/Img3.webp');
     background-size: cover;
     background-position: 50%;
 }
@@ -1079,7 +1079,6 @@ body{
 .aboutUs p{
     margin: 0;
     margin-bottom: 8px;
-    text-indent: 30px;
     line-height: 20px;
 }
 
@@ -1115,3 +1114,156 @@ body{
 }
 
 /* Fim da página: sobreNos */
+
+/* Início da página: postPopular */
+
+.containerPopularPost{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 780px;
+    height: auto;
+    margin-right: 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.containerPopularPost p{
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.containerPopularPost img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.containerPopularPost a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.containerPopularPost a:visited{
+    color: white;
+}
+
+.containerPopularPost a:hover{
+    color: rgb(0, 153, 255);
+}
+
+/* Fim da página: postPopular */
+
+/* Início da página: post */
+
+.containerPost{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 780px;
+    height: auto;
+    margin-right: 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.containerPost p{
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.containerPost img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.containerPost a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.containerPost a:visited{
+    color: white;
+}
+
+.containerPost a:hover{
+    color: rgb(0, 153, 255);
+}
+
+/* ------------------------------------------- */
+
+.containerSuggestion{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 780px;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.suggestion{
+    display: flex;
+    flex-direction: row;
+    width: 33.33%;
+    margin-right: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.suggestionImg{
+    display: flex;
+    justify-content:flex-start;
+    width: 30%;
+    height: auto;
+    padding: 5px;
+}
+
+.suggestionImg img{
+    width: 100%;
+}
+
+.suggestionDescription{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    padding: 5px;
+}
+
+.suggestionDescription p{
+    margin: 0;
+    font-size: 1rem;
+    transition: all 0.7s;
+}
+
+.suggestionDescription img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.suggestionDescription a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.suggestionDescription a:visited{
+    color: white;
+}
+
+.suggestionDescription a:hover{
+    color: rgb(0, 153, 255);
+}
+
+/* ------------------------------------------- */
+
+.buttonToTop{
+    margin: 15px 0 15px;
+}
+
+/* Fim da página: post */
