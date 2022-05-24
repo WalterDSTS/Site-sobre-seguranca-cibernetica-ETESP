@@ -1,4 +1,4 @@
-Forma como os cõdigos CSS foram organizados:
+Forma como os códigos CSS foram organizados:
 
 Padrão adotado para organizar os elementos dentro de cada container:
 FlexBox

@@ -1,5 +1,0 @@
-botao de busca indo para o topo da tela
-
-possibilidade de alterar a estetica de inputs
-
-como navegar de forma correta entre pastas através das linhas de referencia
