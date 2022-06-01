@@ -1,13 +1,13 @@
 /* Scrollbar */
 
-/* Funciona no Firefox */
+/* Works on Firefox */
 
 *{
     scrollbar-width: thin;
     scrollbar-color: #1b1b1b #535353;
 }
 
-/* Funciona no Chrome, Edge, e Safari */
+/* Works on Chrome, Edge, and Safari */
 
 *::-webkit-scrollbar{
     width: 12px;
@@ -35,7 +35,7 @@ body{
     background-color: #242424;
 }
 
-/*Início do tratamento da barra de navegação.*/
+/* Main Navigation Bar */
 
 .containerNavigation{
     width: 100%;
@@ -46,7 +46,7 @@ body{
 
 .navigation{
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
     height: 45px;
     width: 1100px;
     margin: auto;
@@ -57,7 +57,6 @@ body{
     justify-content: flex-start;
     align-items: center;
     width: 25%;
-    height: 100%;
     border-radius: 4px;
 }
 
@@ -72,11 +71,10 @@ body{
     flex-direction: row;
     align-items: center;
     width: 50%;
-    height: 100%;
 }
 
 .navBar p{
-    margin: 0 15px 0;
+    margin: 0 15px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -102,7 +100,6 @@ body{
     justify-content: flex-end;
     align-items: center;
     width: 25%;
-    height: 100%;
 }
 
 .searchBar{
@@ -136,24 +133,25 @@ body{
     cursor: pointer;
 }
 
-/*Fim do tratamento da barra de navegação.*/
+/* End */
 
-/*Este bloco foi criado apenas para aparar o background da barra de navegação*/
+/* This block was created only to fix the background of Navigation Bar */
 .null{
     width: 100%;
     height: 45px;
 }
-/* ------------------------------------------- */
+/* End */
 
-/*Início do tratamento do rodapé principal*/
+/* Main Footer*/
 
 .containerFooterBack{
+    width: 100%;
     background-color: #1b1b1b;
 }
 
 .containerFooter{
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
     align-items: center;
     width: 1100px;
     height: 200px;
@@ -174,15 +172,16 @@ body{
 }
 
 .footerAddress p{
-    width: 100%;
-    margin: 0;
+    width: 95%;
+    margin: auto;
     text-align: justify;
     color: white;
 }
 
 .footerAutor{
-    width: 100%;
+    width: 95%;
     color: white;
+    margin: auto;
 }
 
 .footerAutor i{
@@ -206,11 +205,11 @@ body{
     color: aqua;
 }
 
-/*Fim do tratamento do rodapé principal*/
+/* End */
 
-/*Início da página: Index*/
+/* Index */
 
-/*Início do tratamento do card de apresentação*/
+/* Card de apresentação */
 
 .containerCard{
     width: 1100px;
@@ -226,6 +225,8 @@ body{
     height: 100%;
     border-radius: 4px;
     background-image: url('Imagens/Card/Card.jpg');
+    background-size: 101%;
+    background-repeat: no-repeat;
     filter: grayscale(0.5);
     transition: 0.7s;
 }
@@ -247,7 +248,6 @@ body{
     width: 100px;
     height: 100px;
     position: absolute;
-    border: 1px solid gray;
     border-radius: 4px;
     opacity: 0;
     transition: 0.7s;
@@ -289,44 +289,42 @@ body{
     font-size: 16px;
 }
 
-/*Fim do tratamento do card de apresentação*/
+/* End */
 
-/*Início do tratamento do embrulho*/
+/* Wrapper */
 
 .containerWrapper{
     display: flex;
     flex-direction: row;
-    max-width: 1100px;
-    margin: 15px auto 15px;
+    width: 1100px;
+    margin: 5px auto;
 }
 
-/*Início do tratamento dos posts*/
+/* Postings */
 .containerWrapperBox1{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 780px;
-    margin-right: 20px;
+    width: 72.7%;
 }
 
 .post{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 300px;
-    margin-bottom: 15px;
+    align-items: center;
+    width: 99%;
+    height: 20%;
+    margin-bottom: 5px;
     border: solid 1px gray;
     border-radius: 4px;
-    padding: 5px;
-    background-color: #242424;
 }
 
 .imgPost{
     display: flex;
     justify-content: flex-start;
-    width: 320px;
-    height: 99%;
-    margin-right: 10px;
+    width: 39%;
+    height: 98%;
+    margin: 3px 8px 3px 3px;
     border-radius: 4px;
 }
 
@@ -363,25 +361,19 @@ body{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    width: 480px;
-    height: 300px;
-    float: right;
-}
-
-.informations h4{
-    margin: 5px 0 5px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.67);
+    width: 61%;
+    height: 98%;
+    margin-right: 8px;
 }
 
 .informations h2{
-    margin: 0;
-    margin-bottom: 5px;
+    margin: 5px 0 5px;
     color: rgba(255, 255, 255, 0.96);
+    transition: all 0.7;
 }
 
 .informations cite{
-    margin: 0;
+    margin: 0 0 5px;
     color: rgba(255, 255, 255, 0.45);
 }
 
@@ -395,7 +387,7 @@ body{
 }
 
 .descriptionPost{
-    margin: 40px 0 40px ;
+    margin: 50px 0 ;
     padding: 5px;
     text-align: justify;
     text-indent: 30px;
@@ -419,6 +411,11 @@ body{
     transition: all 0.7s;
 }
 
+.informations h2:link{
+    text-decoration: none;
+    color: white;
+}
+
 .readMore a:link{
     text-decoration: none;
     color: white;
@@ -432,22 +429,25 @@ body{
     color: rgb(0, 153, 255);
 }
 
-/*Fim do tratamento dos posts*/
+/* End */
 
-/*Início do tratamento do newsletter*/
+/* Aside Wrapper (Only visible in desktop)*/
 
 .containerWrapperBox2{
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 27.3%;
 }
 
 .containerAsideBox1{
     display: flex;
     flex-direction: column;
+    margin-bottom: 5px;
 }
 
 .mostPopularPosts{
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
@@ -473,7 +473,7 @@ body{
 .popularPostImg{
     display: flex;
     justify-content: flex-start;
-    width: 100px;
+    width: 34%;
     height: 100px;
     margin: 1px;
     border-radius: 4px;
@@ -501,7 +501,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 200px;
+    width: 66%;
     margin: 5px;
     color: rgba(255, 255, 255, 0.96);
 }
@@ -530,7 +530,7 @@ body{
     width: 100%;
     border-radius: 4px;
     height: 600px;
-    margin: 15px 0 15px;
+    margin-bottom: 5px;
     border: 1px solid gray;
 }
 
@@ -622,14 +622,14 @@ body{
     align-items: center;
     width: 100%;
     height: 400px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     border: solid 1px gray;
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #242424;
 }
 
 .newsLetterBox1{
-    width: 150px;
+    width: 50%;
     margin-top: 20px;
     border: 1px solid gray;
     border-radius: 4px;
@@ -719,7 +719,7 @@ body{
 }
 
 .newsLetterBox4{
-    margin: 0 2px 0;
+    width: 100%;
 }
 
 .newsLetterBox4 p{
@@ -733,16 +733,17 @@ body{
 .containerAsideBox4{
     width: 100%;
     height: 198px;
+    margin-bottom: 5px;
     border: none;
     border: 1px solid gray;
     border-radius: 4px;
 }
 
-/*Fim do tratamento do newsletter*/
+/* End */
 
-/*Fim do tratamento do embrulho*/
+/* End */
 
-/*Início do tratamento do trocador de páginas*/
+/* Switch Pages */
 
 .switchPages{
     display: flex;
@@ -751,7 +752,7 @@ body{
     max-width: 1100px;
     max-height: 30px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .switchPagesBox{
@@ -828,13 +829,13 @@ body{
     transition: all 0.7s;
 }
 
-/*Fim do tratamento do trocador de páginas*/
+/* End */
 
-/*Fim da página: Index*/
+/* End */
 
-/* Início da página: segundaPaginaPosts*/
+/* Second Page Postings */
 
-/*Início do tratamento do banner de notícias*/
+/* News Banner*/
 
 .containerBannerNews{
     width: 1100px;
@@ -899,9 +900,9 @@ body{
     color: #0099ff;
 }
 
-/*Fim do tratamento do banner de notícias*/
+/* End */
 
-/*Início do tratamento dos posts segundaPaginaPosts*/
+/* Second Page Postings - Posting */
 
 .imgPost6{
     background-size: cover;
@@ -931,11 +932,11 @@ body{
     background-image: url('Imagens/Imagens-Posts/imgPost10.jpg');
 }
 
-/*Fim do tratamento dos posts segundaPaginaPosts*/
+/* End */
 
-/* Fim da página: segundaPaginaPosts */
+/* End */
 
-/* Início da página: trabalheConosco */
+/* Work With Us */
 
 .workWithUs{
     width: 1100px;
@@ -970,7 +971,6 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
     color: rgba(255, 255, 255, 0.96);
 }
 
@@ -988,7 +988,6 @@ body{
     align-content: center;
     align-items: center;
     width: 80%;
-    height: 85%;
     margin: auto;
     margin: 2% 0 2%;
     padding: 10px;
@@ -1033,9 +1032,9 @@ body{
     margin: 2% 0 2%;
 }
 
-/* Fim da página: trabalheConosco */
+/* End */
 
-/* Início da página: sobreNos */
+/* About Us */
 
 .containerAboutUs{
     width: 1100px;
@@ -1063,6 +1062,10 @@ body{
     margin-bottom: 8px;
 }
 
+.aboutUsImg img{
+    width: 99.8%;
+}
+
 .map, .aboutUs h4{
     display: flex;
     justify-content: center;
@@ -1087,17 +1090,16 @@ body{
     color: rgb(0, 153, 255);
 }
 
-/* Fim da página: sobreNos */
+/* End */
 
-/* Início da página: postPopular */
+/* Popular Postings */
 
 .containerPopularPost{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 780px;
-    height: auto;
-    margin-right: 20px;
+    width: 71.7%;
+    margin-right: 5px;
     border: 1px solid gray;
     border-radius: 4px;
     padding: 5px;
@@ -1127,17 +1129,16 @@ body{
     color: rgb(0, 153, 255);
 }
 
-/* Fim da página: postPopular */
+/* End */
 
-/* Início da página: post */
+/* Posting */
 
 .containerPost{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     width: 780px;
-    height: auto;
-    margin-right: 20px;
+    margin: 0 5px;
     border: 1px solid gray;
     border-radius: 4px;
     padding: 5px;
@@ -1174,17 +1175,15 @@ body{
     justify-content: center;
     flex-direction: row;
     width: 780px;
-    height: auto;
     margin: auto;
-    padding: 5px;
     color: rgba(255, 255, 255, 0.96);
 }
 
 .suggestion{
     display: flex;
     flex-direction: row;
-    width: 33.33%;
-    margin-right: 10px;
+    width: 33%;
+    margin-right: 5px;
     border: 1px solid gray;
     border-radius: 4px;
 }
@@ -1193,12 +1192,13 @@ body{
     display: flex;
     justify-content:flex-start;
     width: 30%;
-    height: auto;
     padding: 5px;
 }
 
 .suggestionImg img{
     width: 100%;
+    height: 100%;
+    border-radius: 4px;
 }
 
 .suggestionDescription{
@@ -1206,7 +1206,6 @@ body{
     justify-content:flex-end;
     align-items: center;
     width: 70%;
-    height: auto;
     padding: 5px;
 }
 
@@ -1214,11 +1213,6 @@ body{
     margin: 0;
     font-size: 1rem;
     transition: all 0.7s;
-}
-
-.suggestionDescription img{
-    width: 100%;
-    border-radius: 4px;
 }
 
 .suggestionDescription a:link{
@@ -1240,4 +1234,195 @@ body{
     margin: 15px 0 15px;
 }
 
-/* Fim da página: post */
+/* End */
+
+/* Mobile Content (Only visible in mobile devices) */
+
+.mobile{
+    display: none;
+}
+
+.mobileBox{
+    display: flex;
+    flex-direction: row;
+}
+
+/* End */
+
+/* Media for iPad Air or Minor Screens*/
+
+@media screen and (min-width:390px) and (max-width: 1100px) {
+    /* Main Navigation Bar */
+    .navigation{
+        width: 99.8%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    /* End */
+    /* Main Footer */
+    .containerFooter{
+        width: 99.8%;
+    }
+    /* End */
+    /* Index */
+    .containerCard, .containerWrapper, .containerWrapperBox1, .post{
+        width: 99.8%;
+    }
+    .containerCard{
+        height: 400px;
+    }
+    .containerWrapperBox2{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .popularPostSize{
+        margin: 0 3px ;
+    }
+    .descriptionPost{
+        margin: 20px 0;
+    }
+    /* End */
+    /* Second Page Postings */
+    .containerBannerNews{
+        width: 99.8%;
+    }
+    /* End */
+    /* Work With Us */
+    .workWithUs{
+        width: 99.8%;
+        height: 400px;
+    }
+    .containerWorkWithUs{
+        width: 99.8%;
+        height: 850px;
+    }
+    /* End */
+    /* About Us */
+    .containerAboutUs{
+        width: 98%;
+    }
+    /* End */
+    /* Popular Postings */
+    .containerPopularPost{
+        width: 99.8%;
+        margin: 0;
+    }
+    /* End */
+    /* Postings */
+    .containerPost, .containerSuggestion{
+        width: 99.8%;
+        margin: 0;
+    }
+    /* End */
+}
+
+/* End */
+
+/* Media for iPhone 12 Pro */
+
+@media screen and (max-width:400px){
+    /* Main Navigation Bar */
+    .navigation{
+        flex-flow: row wrap;
+        height: 150px;
+    }
+    .logo{
+        width: 100%;
+    }
+    .navBar{
+        width: 100%;
+    }
+    .search{
+        justify-content: center;
+        width: 100%;
+    }
+    .searchBar{
+        width: 95%;
+    }
+    /* End */
+    /* Null */
+    .null{
+        height: 150px;
+    }
+    /* End */
+    /* Main Footer */
+    .containerFooter{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .mainFooterBox{
+        width: 100%;
+    }
+    /* End */
+    /* index */
+    .containerCard{
+        display: none;
+    }
+    .mobileBox{
+        flex-direction: column;
+    }
+    .popularPost1, .popularPost2{
+        width: 99.5%;
+        margin: 2px 0;
+    }
+    .popularPost3{
+        display: none;
+    }
+    .informations h2{
+        font-size: 16px;
+    }
+    .descriptionPost{
+        display: none;
+    }
+    .switchPagesBox2, .switchPagesBox3{
+        display: none;
+    }
+    .switchPagesBox{
+        width: 100%;
+    }
+    .switchButtons{
+        margin: auto;
+    }
+    /* End */
+    /* Second Page Postings */
+    .containerBannerNews{
+        display: none;
+    }
+    /* End */
+    /* Work With Us */
+    .workWithUs{
+        width: 99%;
+        height: 200px;
+    }
+    .containerWorkWithUs{
+        width: 99%;
+    }
+    .formWorkWithUs{
+        width: 90%;
+    }
+    .workWithUsBox1{
+        width: 100%;
+    }
+    .workWithUsBox2{
+        width: 35%;
+    }
+    .workWithUsBox3{
+        width: 65%;
+    }
+    .workWithUs-None{
+        display: none;
+    }
+    /* End */
+    /* Posting */
+    .suggestion-none{
+        display: none;
+    }
+    .suggestion{
+        width: 50%;
+    }
+}
+
+/* End */
