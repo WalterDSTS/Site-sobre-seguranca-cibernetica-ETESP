@@ -1,0 +1,17 @@
+BEM: Bloco, Elemento e Modificador
+
+Bloco:
+
+Funciona como um componente independente, o nome do bloco deve descrever o seu propósito (contactForm, footer, menu, button).
+
+---
+
+Elemento:
+
+É uma  parte que compõe um bloco e não pode ser utilizada separadamente de seu bloco pai. Seu nome deve descrever o elemento sem conter características (red, big), e é precedido do nome de seu bloco pai seguido de dois underscores (contactForm_item, footer_text).
+
+---
+
+Modificador:
+
+São usados para definir aparência, comportamento ou estado do elemento, são precedidos de um hífen (contactForm_item-disabled, footer_text-big).

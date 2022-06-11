@@ -24,6 +24,10 @@ Níveis de dark:
 Cor de borda:
 Gray
 
+Shadow para bordas:
+-webkit-box-shadow: 0px 0px 10px 2px #000000;
+box-shadow: 0px 0px 10px 2px #000000;
+
 Cores de fonte:
 rgba(255, 255, 255, 0.96)
 rgba(255, 255, 255, 0.67)

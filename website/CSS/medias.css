@@ -1,0 +1,142 @@
+@media (max-width:1200px) {
+  /* Introduction card */
+  .card1{
+    display: none;
+  }
+  .containerCard{
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .card2{
+    display: block;
+  }
+  /* Introduction card */
+  /* Main Wrapper */
+  .containerMainWrapper{
+    width: 98%;
+  }
+  /* Main Wrapper */
+  /* Aside Wrapper (Only visible in large devices)*/
+  .containerMainWrapper_box2{
+    display: none;
+  }
+  .containerMainWrapper_box1{
+    width: 100%;
+  }
+  /* Aside Wrapper (Only visible in large devices)*/
+  /* Switch Pages */
+  .containerSwitchPages{
+    width: 98%;
+  }
+  /* Switch Pages */
+  .containerFooter{
+    width: 100%;
+  }
+  /* About Us */
+  .containerAboutUs{
+    width: 98%;
+  }
+  /* About Us */
+  /* Work With Us */
+  .containerWorkWithUs{
+    width: 98%;
+    height: auto;
+  }
+  /* Work With Us */
+  /* Main post - pages */
+  .containerMainPost{
+    width: 98%;
+  }
+  /* Main post - pages */
+}
+
+/* ----------------------- */
+
+@media (max-width: 875px){
+  /* Work With Us */
+  .workWithUs-None{
+    display: none;
+  }
+  /* Work With Us */
+  /* Main post - pages */
+  .containerSuggestion{
+    width: 98%;
+  }
+  /* Main post - pages */
+}
+
+/* ----------------------- */
+
+@media (max-width: 580px){
+  .containerSuggestion{
+    flex-direction: column;
+    align-items: center;
+  }
+  .suggestion{
+    width: 98%;
+  }
+}
+
+/* ----------------------- */
+
+@media (max-width:425px) {
+  /* Main Wrapper */
+  .mainPosts_link-reference, .mainPosts_description{
+    display: none;
+  }
+  .mainPosts_informations h2{
+    margin-bottom: 5px;
+  }
+  /* Main Wrapper */
+  /* Switch Pages */
+  .containerSwitchPages{
+    flex-direction: column;
+    height: auto;
+  }
+  .switchPages_boxes{
+    justify-content: center;
+  }
+  /* Switch Pages */
+  /* Main Footer*/
+  .containerFooter{
+    flex-flow: column;
+    height: 30%;
+  }
+  .mainFooter-box{
+    width: 100%;
+  }
+  .mainFooter-logo{
+    margin-top: 15px;
+  }
+  .mainFooter-logo img{
+    margin: 0;
+  }
+  .mainFooter-autor{
+    margin-bottom: 15px;
+  }
+  /* Main Footer*/
+}
+
+/* ------------------------- */
+
+@media (max-width: 330px) {
+  /* Main Navigation Bar */
+  .navigationBar_logo{
+    display: none;
+  }
+  .navigationBar_icone{
+    display: block;
+  }
+  /* Main Navigation Bar */
+  /* Main Postings */
+  .mainPosts_informations h2{
+    font-size: 1.2rem;
+  }
+  /* Main Postings */
+  /* Main post - pages */
+  .containerMainPost h1, .containerMainPost h2, .containerMainPost h3, .containerMainPost h4, .containerMainPost h5, .containerMainPost h6{
+    font-size: 1.2rem;
+  }
+  /* Main post - pages */
+}
