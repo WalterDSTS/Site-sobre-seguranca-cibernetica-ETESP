@@ -1,4 +1,4 @@
-/* Main Navigation Bar */
+// Main Navigation Bar
 
 const btnMobileBurguer = document.getElementById('btnMobileBurguer');
 
@@ -7,15 +7,38 @@ function toggleMenu(event){
   const nav = document.getElementById('nav');
   nav.classList.toggle('active');
   const active = nav.classList.contains('active');
-  event.currentTarget.setAttribute('aria-expended', active);
-  if (active) {
-    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
-  } else {
-    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
-  }
 }
 
 btnMobileBurguer.addEventListener('click', toggleMenu);
 btnMobileBurguer.addEventListener('touchstart', toggleMenu);
 
-/* Main Navigation Bar */
+// Switch Color Theme
+
+let themeToggler = document.getElementById("themeToggler");
+themeToggler.addEventListener("click", () => {
+  let targetTheme;
+  let currentTheme = document.documentElement.getAttribute("data-theme");
+  if (currentTheme === "light") {
+    targetTheme = "dark";
+  } else {
+    targetTheme = "light";
+  }
+  document.documentElement.setAttribute("data-theme", targetTheme);
+  localStorage.setItem("theme", targetTheme);
+});
+
+// ------------
+
+let savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  document.documentElement.setAttribute("data-theme", savedTheme);
+} else {
+  let browserTheme = window.matchMedia("(prefers-color-scheme: light)").matches
+    ? "light"
+    : "dark";
+  document.documentElement.setAttribute("data-theme", browserTheme);
+}
+
+// Switch Color Theme
+
+// Main Navigation Bar

@@ -100,6 +100,7 @@
   /* Switch Pages */
   /* Main Footer*/
   .containerFooter{
+    /* justify-content: center; */
     flex-flow: column;
     height: 30%;
   }

@@ -1,5 +1,0 @@
-Corrigir o link da pagina "sobreNos" e a resposividade do iframe maps.
-
-Possibilidade das divs serem links nos posts.
-
-Corrigir a lista no segundo post da párgina principal.

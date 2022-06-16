@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -15,12 +15,12 @@
 <body>
   <header class="mainHeader">
     <div class="containerNavigationBar">
-      <div class="navigationBar_logo">
-        <a href="./index.html"><img src="../../Imagens/Logo/WCSB.svg" alt="Walt Cyber Secyurity"></a>
+      <div class="navigationBar_logo navigationBar_logo-img"></div>
+      <div class="navigationBar_icone navigationBar_icone-img">
+        <!-- Only visible in minor devices -->
       </div>
       <nav class="navigationBar" id="nav">
-        <button aria-label="Abrir Menu" class="navigationBar_btn-mobile" id="btnMobileBurguer" aria-haspopup="true"
-          aria-controls="Menu" aria-expanded="false">
+        <button class="navigationBar_btn-mobile" id="btnMobileBurguer">
           Menu
           <span class="hamburguer"></span>
         </button>
@@ -28,6 +28,14 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="sobre-nos.html">Sobre Nós</a></li>
           <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+          <li><button class="navigationBar_btn-mobile" id="themeToggler">Alterar cor do tema</button></li>
+          <li>
+            <ul class="languageSelector">
+              <a href="#">Idioma  <span><i class="fa fa-arrow-down icon"></i></span></a>
+              <li><a href="index.html">Português</a></li>
+              <li><a href="../Site em Inglês/index.html">Inglês</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
@@ -172,11 +180,17 @@
       <div class="aboutUs_map">
         <iframe
           src="https://maps.google.com/maps?q=Av.%20Tiradentes,%20615%20-%20Luz,%20S%C3%A3o%20Paulo%20-%20SP,%2001101-010,%20Brazil&t=&z=17&ie=UTF8&iwloc=&output=embed"
-          frameborder="0" width="500" height="500"></iframe>
+          frameborder="0" width="100%" height="100%">
+        </iframe>
       </div>
-      <h4>Marque um dia/horário e venha nos fazer uma visita clicando <a
-          href="mailto:email@teste.com.br?&subject=Desejo Marcar uma visita!" class="aboutUs_visit">aqui!</a>
-      </h4>
+      <div class="aboutUs-emailTo-box">
+        <address class="aboutUs-emailTo">
+          Agende um dia e horário para nos fazer uma visita clicando aqui:
+          <a href="mailto:email@teste.com.br?&subject=Desejo Marcar uma visita!">
+            <i class="fa fa-clock-o icon"></i>
+          </a>
+        </address>
+      </div>
       <div class="backToTop">
         <a href="#top">
           <p>Topo</p>
@@ -187,9 +201,7 @@
   <footer class="containerFooterBack">
     <footer class="containerFooter">
       <div class="mainFooter-box">
-        <div class="mainFooter-logo">
-          <img src="../../Imagens/Logo/WCSB.svg" alt="Walt Cyber Security">
-        </div>
+        <div class="mainFooter_logo mainFooter_logo-img"></div>
       </div>
       <div class="mainFooter-box">
         <div class="mainFooter-address">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -15,16 +15,12 @@
 <body>
   <header class="mainHeader">
     <div class="containerNavigationBar">
-      <div class="navigationBar_logo">
-        <a href="./index.html"><img src="../../Imagens/Logo/WCSB.svg" alt="Walt Cyber Secyurity"></a>
-      </div>
-      <div class="navigationBar_icone">
-        <!-- Only visible iminor devices -->
-        <a href="./index.html"><img src="../../Imagens/Icone/icone.svg" alt="Walt Cyber Security"></a>
+      <div class="navigationBar_logo navigationBar_logo-img"></div>
+      <div class="navigationBar_icone navigationBar_icone-img">
+        <!-- Only visible in minor devices -->
       </div>
       <nav class="navigationBar" id="nav">
-        <button aria-label="Abrir Menu" class="navigationBar_btn-mobile" id="btnMobileBurguer" aria-haspopup="true"
-          aria-controls="Menu" aria-expanded="false">
+        <button class="navigationBar_btn-mobile" id="btnMobileBurguer">
           Menu
           <span class="hamburguer"></span>
         </button>
@@ -32,6 +28,14 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="sobre-nos.html">Sobre Nós</a></li>
           <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+          <li><button class="navigationBar_btn-mobile" id="themeToggler">Alterar cor do tema</button></li>
+          <li>
+            <ul class="languageSelector">
+              <a href="#">Idioma  <span><i class="fa fa-arrow-down icon"></i></span></a>
+              <li><a href="index.html">Português</a></li>
+              <li><a href="../Site em Inglês/index.html">Inglês</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
@@ -487,7 +491,7 @@
         <div class="popularPost-size">
           <div class="popularPost-img popularPost-img1"></div>
           <div class="popularPost-description">
-            <a href="postPopular1.html">
+            <a href="post-popular-1.html">
               <p>Profissão do futuro? Salários para segurança digital chegam a R$ 47mil</p>
             </a>
           </div>
@@ -495,7 +499,7 @@
         <div class="popularPost-size">
           <div class="popularPost-img popularPost-img2"></div>
           <div class="popularPost-description">
-            <a href="postPopular2.html">
+            <a href="post-popular-2.html">
               <p>Hackers invadem rede social da OpenSea e dão golpe com "NFTs do YouTube"</p>
             </a>
           </div>
@@ -503,7 +507,7 @@
         <div class="popularPost-size">
           <div class="popularPost-img popularPost-img3"></div>
           <div class="popularPost-description">
-            <a href="postPopular3.html">
+            <a href="post-popular-3.html">
               <p>Sem golpes: 7 dicas para proteger apps e smartphones</p>
             </a>
           </div>
@@ -530,7 +534,9 @@
             </div>
           </div>
           <div class="userButton">
-            <button type="submit" class="userSubmitNews">Quero receber as notícias!</button>
+            <button type="submit" class="userSubmitNews">
+              <p>Assinar</p>
+            </button>
           </div>
         </form>
         <div class="containerMainWrapper_box2-6">
@@ -578,9 +584,7 @@
   <footer class="containerFooterBack">
     <footer class="containerFooter">
       <div class="mainFooter-box">
-        <div class="mainFooter-logo">
-          <img src="../../Imagens/Logo/WCSB.svg" alt="Walt Cyber Security">
-        </div>
+        <div class="mainFooter_logo mainFooter_logo-img"></div>
       </div>
       <div class="mainFooter-box">
         <div class="mainFooter-address">
