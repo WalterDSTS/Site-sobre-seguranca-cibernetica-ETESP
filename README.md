@@ -1,9 +1,10 @@
 # Site sobre segurança cibernética - ETESP
 
-	Esse é um dos meus primeiros sites feito de forma mais completa, atividade lecionada pelo meu professor de programação WEB com o intuito de usarmos todos os elementos/atributos aprendidos durante o primeiro semestre sobre HTML/CSS/JAVASCRIPT, a ideia do site é que seja um blog sobre notícias do mundo da ciber segurança.
+Esse é um dos meus primeiros sites feito de forma mais completa, atividade lecionada pelo meu professor de programação WEB com o intuito de usarmos todos os elementos/atributos aprendidos durante o primeiro semestre sobre HTML/CSS/JAVASCRIPT, a ideia do site é que seja um blog sobre notícias do mundo da ciber segurança.
 
 ## Pontos praticados e estudos mais a fundo durante a criação do site:
-	Tomando como base a quantidade de commits deste repositório, é notável que refiz e criei diversas funcionalidades de acordo com o meu conhecimento e curiosidade. Abaixo, listo alguns dos tópicos que mais me interessaram e que passei mais tempo estudando sobre:
+
+Tomando como base a quantidade de commits deste repositório, é notável que refiz e criei diversas funcionalidades de acordo com o meu conhecimento e curiosidade. Abaixo, listo alguns dos tópicos que mais me interessaram e que passei mais tempo estudando sobre:
 
 - Estruturação do corpo HTML utilizando elementos semânticos;
 - Box Model;
